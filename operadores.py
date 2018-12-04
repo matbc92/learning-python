@@ -74,3 +74,4 @@ print('b =', b)
 # ** : Exponentiation
 # x[index], x[index:index], x(arguments...), x.attribute : Subscription, slicing, call, attribute reference
 # (expressions...), [expressions...], {key: value...}, {expressions...} : Binding or tuple display, list display, dictionary display, set display
+#testando uma coisa com o git hub
