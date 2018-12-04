@@ -17,12 +17,16 @@ print('1 << 5 = ' + str(1 << 5))
 print('32 >> 5 = ' + str(32 >> 5))
 #& and bit-wise ele compara o valor binario dos dois elementos, resultando num terceiro valor binario
 # que exprime 1 em todas as casas que os dois valores anteriores sejam iguais e zero no restante
+#####################
 #| bit-wise or ele compara o valor binario dos dois elementos, resultando num terceiro valor binario
 # que exprime 1 em todas as casas que o valor de pelo menos um dos elementos seja 1 e zero nas outras
-#^ bit-wise or ele compara o valor binario dos dois elementos, resultando num terceiro valor binario
+#####################
+#^ bit-wise xor ele compara o valor binario dos dois elementos, resultando num terceiro valor binario
 # que exprime 1 em todas as casas que o valor de somento um dos elementos seja 1 no restante zero
+#####################
 #~bitwise invert alterna todos os digitos do valor binario de um elemento,
 # tal operação conicide com a a operaçao de -(x+1) sendo x o valor a ser invertido
+#####################
 #< operador de menor do que, resulta um valor True ou False booleano
 print('3 < 5 = ' + str(3 < 5))
 print('5 < 3 = ' + str(5 < 3))
@@ -37,3 +41,20 @@ print('15 == 15 = ' + str(15 == 15))
 #!= operador logico de diferente, ou não igual a
 print('15 != 51 = ' + str(15 == 51))
 print('15 != 15 = ' + str(15 == 15))
+# not, and, e or são os poreadores logicos booleanos como eles funcionam na logica classica,
+#Mudando o topico, existem alguns atalhos associados a certos operadores
+# para utilizar recursivamente as variaveis em suas proprias definiçoes
+a = 2
+print('a = ' + str(a))
+a = a * 3
+print('a = a * 3')
+print('a = ' + str(a))
+#Mesma operação, mas dessa vez utilizando o atalho tanto na adição quanto na multiplicação
+b = 4
+print('b = ' + str(b))
+b *= 3
+print('b *= 3')
+print('b = ' + str(b))
+b += 3
+print('b += 3')
+print('b = ' + str(b))
