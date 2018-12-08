@@ -1,3 +1,4 @@
+# coding=utf-8
 # + adiciona dois itens(opratarios, ou operand)
 print('3 + 5 =', 3 + 5)
 print("'a' + 'b' = " + 'a' + 'b')
@@ -58,6 +59,7 @@ print('b =', b)
 b += 3
 print('b += 3')
 print('b =', b)
+# a ordem de prioridades das operações é a seguinte
 # lambda : Lambda Expression
 # if - else : Conditional expression
 # or : Boolean OR
