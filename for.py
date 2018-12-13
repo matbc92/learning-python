@@ -1,4 +1,4 @@
-#sera que terei que anotar algo aqui??
+# for..in é uma função que instrui o programa a iterar um bloco de sobre cada objeto numa sequencia de objetos
 for i in range(1, 6):
     print(i)
 else:
