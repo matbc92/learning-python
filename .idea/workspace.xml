@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c490b74f-c56d-4a02-9935-31a51389361a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/for.py" beforeDir="false" afterPath="$PROJECT_DIR$/for.py" afterDir="false" />
-    </list>
+    <list default="true" id="c490b74f-c56d-4a02-9935-31a51389361a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/for.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
+            <state relative-caret-position="105">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -365,7 +363,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="25" width="683" height="741" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.41363636" />
@@ -453,8 +450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/for.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
