@@ -9,3 +9,6 @@ if os.system('git commit --m {}'.format(messange.replace(' ','\ '))) == 0:
     print('files commited')
 else:
     print('failed to commit files')
+os.system('git push')
+os.system('matbc92')
+os.system(input())
