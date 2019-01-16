@@ -1,4 +1,7 @@
-#  se assinala um objeto a uma variavel, esta variavel vai se referir ao objeto, ou seja, qualquer operação direcionada a variavel sera exercida sobre o objeto, por conta disto se a intenção é copiar os valores de uma lista a uma outra variavel o adequado é utilizar uma função slice
+#  se assinala um objeto a uma variavel, esta variavel vai se referir ao objeto,
+#  ou seja, qualquer operação direcionada a variavel sera exercida sobre o objeto,
+#  por conta disto se a intenção é copiar os valores de uma lista a uma outra variavel
+#  o adequado é utilizar uma função slice encapsulando a sequencia toda ou a função .copy
 
 print('Simple Assignment')
 shoplist = ['apple', 'mango', 'carrot', 'banana']
@@ -23,3 +26,7 @@ del mylist[0]
 print('shoplist is', shoplist)
 print('mylist is', mylist)
 # Notice that now the two lists are different
+
+conjuntoloko = set([1, 5, 6, 9, 22])
+subconjuntoloko = set([9, 22])
+print(conjuntoloko.issuperset(subconjuntoloko))
