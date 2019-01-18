@@ -1,6 +1,5 @@
 import os
 import time
-import zipfile
 # 1. The files and directories to be backed up are
 # specified in a list.
 # Example on Windows:
@@ -37,17 +36,15 @@ if len(comment) == 0:
     target = today + os.sep + now + '.zip'
 else:
     target = today + os.sep + now + '_' +\
-             comment + '.zip'
+             comment.replace(' ', '\ ') + '.zip'
 
 
 # Create the subdirectory if it isn't already there
 if not os.path.exists(today):
     os.mkdir(today)
     print('Successfully created directory', today)
-
-backup = zipfile.ZipFile(target, 'w')
-for dirname, subdirs, files in os.walk(source):
-    backup.write(dirname)
-    for filename in files:
-        backup.write(os.path.join(dirname, filename))
-# 5. We use the zip command to put the files in a zip archive
+zipcommand = 'python3 -m zipfile -c {} {}'.format(target, source)
+if os.system(zipcommand) == 0:
+    print('backup succesful')
+else:
+    print('backup failed')

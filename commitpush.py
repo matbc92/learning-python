@@ -4,7 +4,7 @@ if os.system('git add .') == 0:
     print('files added')
 else:
     print('failed to add files')
-messange = input()
+messange = input('Insira o comment:')
 # por alguma razão os caracteres de espaço
 # resultantes da função input causam problemas
 # quando importados para o shell, portanto precisei
