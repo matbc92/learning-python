@@ -18,18 +18,27 @@ source = ['/home/matbc/Desktop']
 # Example on Mac OS X and Linux:
 target_dir = '/home/matbc/backup_do_desktop'
 # Remember to change this to which folder you will be using
-
-# 3. The files are backed up into a zip file.
-# 4. The name of the zip archive is the current date and time
-target = target_dir + os.sep + \
-         time.strftime('Desktop\ at\ %d-%m-%Y\ %H:%M:%S') + '.zip'
-
 # Create target directory if it is not present
 if not os.path.exists(target_dir):
     os.mkdir(target_dir)  # make directory
 
+# 3. The files are backed up into a zip file.
+# 4. The name of the zip archive is the current date and time# 4. The current day is the name of the subdirectory
+# in the main directory.
+today = target_dir + os.sep + time.strftime('%d-%m-%Y')
+# The current time is the name of the zip archive.
+now = time.strftime('%H:%M:%S')
+# The name of the zip file
+target =today + os.sep + 'Desktop\ at\ ' + now + '.zip'
+# Create the subdirectory if it isn't already there
+if not os.path.exists(today):
+    os.mkdir(today)
+    print('Successfully created directory', today)
+
+
 # 5. We use the zip command to put the files in a zip archive
-zip_command = 'zip -r {0} {1}'.format(target,' '.join(source))
+zip_command = 'zip -r {0} {1}'.format(target,
+                                      ' '.join(source))
 
 # Run the backup
 print('Zip command is:')
