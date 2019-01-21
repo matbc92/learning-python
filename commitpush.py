@@ -14,3 +14,4 @@ if os.system('git commit --m {}'.format(messange.replace(' ','\ '))) == 0:
 else:
     print('failed to commit files')
 os.system('git push')
+1
