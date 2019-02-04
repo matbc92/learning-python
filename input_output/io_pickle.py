@@ -1,4 +1,9 @@
-# pickle é um modulo que armazena arquivos de forma semicompilada para que possam ser lidos e alterados pelo programa em qualquer sistema operacionasl, ele difere do modulo marshall prinicipalmente no quesito de que ele faz esse aramazenamento de forma persistente
+# pickle é um modulo que armazena arquivos de forma
+# semicompilada para que possam ser lidos e alterados
+# pelo programa em qualquer sistema operacionasl,
+# ele difere do modulo marshall prinicipalmente
+# no quesito de que ele faz esse aramazenamento de
+# forma persistente
 import pickle
 
 # The name of the file where we will store the object
