@@ -8,17 +8,14 @@ def reverse(text):
     return text[::-1]
 
 
-def is_palindrome(text):
+def is_palindrome(text=str):
+    import string
+    text = text.replace(' ', '').lower().translate(str.maketrans({key: None for key in string.punctuation}))
     return text == reverse(text)
 
 
 something = input("Enter text: ")
-if is_palindrome(something.replace(' ','').replace('','').replace('!','')\
-                         .replace('...','').replace('(','').replace(')','')\
-                         .replace('[','').replace(']','').replace(',','')\
-                         .replace('?','').replace('—','').replace('\'','')\
-                         .replace('"','').replace('/','').replace('\\','')\
-                         .replace(':','').replace(';','')):
+if is_palindrome(something):
     print("Yes, it is a palindrome")
 else:
     print("No, it is not a palindrome")
