@@ -40,8 +40,8 @@ print('5 > 3 =', 5 > 3)
 print('15 == 51 =', 15 == 51)
 print('15 == 15 =', 15 == 15)
 #!= operador logico de diferente, ou não igual a
-print('15 != 51 =', 15 == 51)
-print('15 != 15 =', 15 == 15)
+print('15 != 51 =', 15 != 51)
+print('15 != 15 =', 15 != 15)
 # not, and, e or são os poreadores logicos booleanos como eles funcionam na logica classica,
 #Mudando o topico, existem alguns atalhos associados a certos operadores
 # para utilizar recursivamente as variaveis em suas proprias definiçoes
