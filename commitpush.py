@@ -2,7 +2,7 @@
 import os
 if os.system('git add .') == 0:
     print('files added')
-    #as aspas duplas dentro das aspas simples
+    # as aspas duplas dentro das aspas simples
     # sao para indicar para o os, que o input é uma string
     messenge = input('Insira o comment:')
     if os.system('git commit --m "{}"'.format(messenge)) == 0:
