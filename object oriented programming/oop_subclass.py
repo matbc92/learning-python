@@ -19,9 +19,8 @@ class Teacher(SchoolMember):
         self.salary = salary
         print ('(Initialized Teacher: {})'.format(self.name))
         self.teacher_subphrase = 'Salary: "{:d}"'.format(self.salary)
-        self.teacher_phrase = str(self.member_phrase) + str(self.teacher_subphrase)
+        self.teacher_phrase ="{} {}".format(self.member_phrase,  self.teacher_subphrase)
     def tell(self):
-        SchoolMember.tell(self)
         print (self.teacher_phrase)
 class Student(SchoolMember):
     '''Represents a student.'''
@@ -29,20 +28,15 @@ class Student(SchoolMember):
         SchoolMember.__init__(self, name, age)
         self.marks = marks
         print ('(Initialized Student: {})'.format(self.name))
-        self.studen_subphrase = 'Marks: "{:d}"'.format(self.marks)
-        self.studen_phrase = self.member_phrase + self.studen_subphrase
+        self.student_subphrase = 'Marks: "{:d}"'.format(self.marks)
+        self.student_phrase = self.member_phrase + self.student_subphrase
     def tell(self):
-        SchoolMember.tell(self)
-        print (self.studen_phrase)
+        print (self.student_phrase)
 class Weirdo(Teacher, Student):
     def __init__(self,name, age, marks, salary):
         Teacher.__init__(self,name,age,salary)
         Student.__init__(self,name,age,marks)
-        self.name = name
-        self.age = age
-        self.marks = marks
-        self.salary = salary
-        self.weirdo_phrase = self.member_phrase +self.studen_subphrase +self.teacher_subphrase
+        self.weirdo_phrase = '{} {} {}'.format(self.member_phrase ,self.student_subphrase, self.teacher_subphrase)
         print('(Initialized Weirdo: {})'.format(self.name))
     def tell(self):
         print(self.weirdo_phrase)

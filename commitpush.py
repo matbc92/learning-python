@@ -1,5 +1,6 @@
 #programinha pra facilitar meus commmits
 import os
+os.chdir('/home/matbc/learning-python/')
 if os.system('git add .') == 0:
     print('files added')
     # as aspas duplas dentro das aspas simples
@@ -12,5 +13,4 @@ if os.system('git add .') == 0:
     os.system('git push')
 else:
     print('failed to add files')
-
-
+os.chdir('/home/matbc')
