@@ -18,6 +18,11 @@ class Fraction:
     def __str__(self):
         return str('{}/{}'.format(self.num,self.den))
 
+    def get_num(self):
+        return self.num
+
+    def get_den(self):
+        return self.den
 
     def __add__(self,other_fraction):
         newnum = self.num*other_fraction.den + self.den*other_fraction.num
@@ -72,3 +77,4 @@ print (f1/f4)
 print(f1>f4)
 print(f2<f4)
 print(f1-f2)
+print('fração f1 = {}/{}'.format(f1.get_num(), f1.get_den()))
